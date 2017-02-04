@@ -141,21 +141,179 @@ footer {
 }
 
 .about__box {
+	margin-bottom: 80px;
 	padding-top: 20px;
 	background-color: #fff;
+	box-shadow: 0 0 20px 0px #000;
 }
 
 .about__photo {
+	margin-bottom: 40px;
+}
+
+.about__content {
 
 }
 
-hr {
-	background-color: red;
+.line {
+	margin-bottom: 0px;
+	border: 1px solid #ce5aff;
+	width: 100px;
 }
 
+.about__title {
+	font-family: "Dancing Script OT", sans-serif;
+	font-size: 48px;
+}
+
+.about__text {
+	font-family: Open-Sans, sans-serif;
+	font-size: 16px;
+}
+
+.about__button {
+	margin: 15px auto;
+	display: block;
+	background-color: #fff;
+	font-size: 18px;
+	color: #ce5aff;
+	width: 160px;
+	height: 44px;
+	border: 3px solid  #ce5aff;
+	border-radius: 22px;
+}
+/*
+.about__button:hover {
+	background-color: #fce4fe;
+	box-shadow: 0 0 1px 1px #b37fad;
+}*/
 
 
-											/***			SECTION ABOUT      ***/
+
+											/***			SECTION HISTORY      ***/
+
+
+.history__box {
+	margin-bottom: 80px;
+	padding-top: 20px;
+	padding-bottom: 35px;
+	background-color: #fff;
+	box-shadow: 0 0 20px 0px #000;
+}
+
+.history__title {
+	margin-bottom: 30px;
+	font-family: "Dancing Script OT", sans-serif;
+	font-size: 48px;
+}
+
+.history__generation {
+	margin-bottom: 20px;
+	border-right: 2px solid #222;
+}
+
+.history__generation_title {
+	position: relative;
+	padding: 0 20px;
+	background-color: #bd6b00;
+	color: #fff;
+	font-family: Open-Sans, sans-serif;
+	font-size: 18px;
+}
+
+.history__generation_text {
+	font-family: Open-Sans, sans-serif;
+	font-size: 14px;
+}
+
+.history__generation_year {
+	position: absolute;
+	top: -23px;
+	right: -36px;
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	background-color: #bd6b00;
+	color: #fff;
+	text-align: center;
+	line-height: 70px;
+	font-family: Open-Sans, sans-serif;
+	font-size: 18px;
+}
+
+.history__evolution {
+	margin-bottom: 20px;
+	border-right: 2px solid #222;
+}
+
+.history__evolution_title {
+	position: relative;
+	padding: 0 20px;
+	background-color: #117600;
+	color: #fff;
+	font-family: Open-Sans, sans-serif;
+	font-size: 18px;
+}
+
+.history__evolution_text {
+	font-family: Open-Sans, sans-serif;
+	font-size: 14px;
+}
+
+.history__evolution_year {
+	position: absolute;
+	top: -23px;
+	right: -35px;
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	background-color: #117600;
+	color: #fff;
+	text-align: center;
+	line-height: 70px;
+	font-family: Open-Sans, sans-serif;
+	font-size: 18px;
+}
+
+.history__success {
+	margin-bottom: 20px;
+	border-right: 2px solid #222;
+}
+
+.history__success_title {
+	position: relative;
+	padding: 0 20px;
+	background-color: #7400bd;
+	color: #fff;
+	font-family: Open-Sans, sans-serif;
+	font-size: 18px;
+}
+
+.history__success_img {
+	padding: 10px 10px 10px 0;
+	padding-right: 10px;
+}
+
+.history__success_text {
+	font-family: Open-Sans, sans-serif;
+	font-size: 14px;
+}
+
+.history__success_year {
+	position: absolute;
+	top: -23px;
+	right: -36px;
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	background-color: #7400bd;
+	color: #fff;
+	text-align: center;
+	line-height: 70px;
+	font-family: Open-Sans, sans-serif;
+	font-size: 18px;
+}
+
 
 
 
@@ -167,22 +325,44 @@ hr {
 	footer {
 		margin: auto;
 		width: 100%;
-		background-image: url(../images/bg_footer.jpg);
-		background-position: top;
-		background-repeat: no-repeat;
-		border-top: 1px solid #828282; 
-		height: 201px;
-		box-shadow: inset 0 10px 10px 0 rgba(0, 0, 0, .1);
+		background-color: #fff;
 	}
-
 
 	.footer__wrapper {
-		margin: 0 auto;
-		padding: 0 20px;
-		width: 280px;
+
 	}
 
+	.footer__nav {
+		margin: 10px 0;
+	}
 
+	.footer__nav_title,
+	.footer__timing_title {
+		font-family: "Dancing Script OT", sans-serif;
+		font-size: 32px;
+	}
+
+	.footer__nav_item p {
+		margin: 0;
+		padding: 0;
+		color: #222;
+		font-family: Open-Sans, sans-serif;
+		font-size: 18px;
+	}
+
+	.footer__nav_item p:hover {
+		text-decoration: underline;
+	}
+
+	.footer__timing {
+		margin: 10px 0;
+	}
+
+	.footer__timing_day {
+		display: flex;
+		flex: wrap;
+		justify-content: space-between;
+	}
 
 
 										
@@ -219,6 +399,27 @@ hr {
 .about__box {
 	padding-top: 40px;
 }
+
+.about__photo {
+	margin-bottom: 0px;
+}
+
+.history__evolution {
+	border-left: 2px solid #222;
+	border-right: none;
+}
+
+.history__evolution_text {
+	padding-left: 20px;
+}
+
+.history__evolution_year {
+	top: -23px;
+	left: -37px;
+}
+
+
+
 
 
 
@@ -258,6 +459,25 @@ hr {
 	padding-top: 60px;
 }
 
+.about__photo {
+	margin-bottom: 0px;
+}
+
+.history__evolution {
+	border-left: 2px solid #222;
+	border-right: none;
+}
+
+.history__evolution_text {
+	padding-left: 20px;
+}
+
+.history__evolution_year {
+	top: -23px;
+	left: -37px;
+}
+
+
 
 
 
@@ -291,6 +511,26 @@ hr {
 .about__box {
 	padding-top: 70px;
 }
+
+.about__photo {
+	margin-bottom: 0px;
+}
+
+.history__evolution {
+	border-left: 2px solid #222;
+	border-right: none;
+}
+
+.history__evolution_text {
+	padding-left: 20px;
+}
+
+.history__evolution_year {
+	top: -23px;
+	left: -37px;
+}
+
+
 
 
 
