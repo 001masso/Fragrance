@@ -6,41 +6,101 @@
 	body {
 	}
 
-.wrapper {
-	margin: auto;
-	width: 100%;
-	min-width: 320px;
-	max-width: 1400px;
-	background-color: #f6dfe8;
-	color: #272727;
-}
+	.popup__container {
+    margin: 0px auto;
+    font-size: 18px;
+		font-weight: 600;
+	}
 
-header,
-section,
-footer {
-	position: relative;
-}
+	.popup__form {
+	  padding: 10px;
+	}
 
-.rov {
-	margin: 0;
-	padding: 0;
-}
+	.popup__container a {
+    color: #ce5aff;
+  }
 
-@font-face {
-	font-family: "Dancing Script OT";
-	src: url("../fonts/DancingScript-Regular.ttf") format("truetype");
-	src: url("../fonts/DancingScript-Regular.otf") format("opentype");
-	font-style: normal;
-	font-weight: normal;
-}
+	.popup__container a:hover {
+		text-decoration: none;
+		color:  #ce5aff;
+	}
 
-@font-face {
-	font-family: "Dancing Script OT";
-	src: url("../fonts/DancingScript-Bold.ttf") format("truetype");
-	src: url("../fonts/DancingScript-Bold.otf") format("opentype");
-	font-style: normal;
-	font-weight: bold;
-}
+	.popup{
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+	}
+
+	.popup .popup__content{
+		position: relative;
+    margin-top: 150px;
+    padding: 30px 30px 5px 30px;
+    background-color: #fff;
+	}
+
+	input,
+	textarea {
+		padding: 10px;
+		width: 100%;
+		font-family: Open-Sans, sans-serif;
+		font-size: 14px;
+		border-left: 2px solid #ce5aff;
+		background: #eee;
+	}
+
+	textarea {
+		height: 100px;
+	}
+
+	a .fa-times-circle {
+		position: absolute;
+		top: -10px;
+		right: -7px;
+		color: #222;
+		font-size: 40px;
+	}
+
+	.button__submit {
+		padding: 0;
+		float: right;
+		max-width: 100%;
+		font-weight: 600;
+	}
+
+	.wrapper {
+		margin: auto;
+		width: 100%;
+		min-width: 320px;
+		max-width: 1400px;
+		background-color: #f6dfe8;
+		color: #272727;
+	}
+
+	header,
+	section,
+	footer {
+		position: relative;
+	}
+
+	@font-face {
+		font-family: "Dancing Script OT";
+		src: url("../fonts/DancingScript-Regular.ttf") format("truetype");
+		src: url("../fonts/DancingScript-Regular.otf") format("opentype");
+		font-style: normal;
+		font-weight: normal;
+	}
+
+	@font-face {
+		font-family: "Dancing Script OT";
+		src: url("../fonts/DancingScript-Bold.ttf") format("truetype");
+		src: url("../fonts/DancingScript-Bold.otf") format("opentype");
+		font-style: normal;
+		font-weight: bold;
+	}
 
 
 
@@ -57,34 +117,29 @@ footer {
 		background-repeat: no-repeat;
 	}
 
-	.header__nav {
-		top: 0;
-		left: 0;
-		right: 0;
-		background-color: rgba(0, 0, 0, .5);
-		font-size: 14px;
-		font-width: 600;
-		letter-spacing: 1px;
-		text-align: center;
-		font-family: Open-Sans, sans-serif;
-	}
+.header__nav {
+	background-color: rgba(0, 0, 0, .5);
+	font-size: 14px;
+	font-width: 600;
+	letter-spacing: 1px;
+	text-align: center;
+	font-family: Open-Sans, sans-serif;
+}
 
-	.header__logo {
-		margin: auto;
-		padding: 15px 0px;
-		display: block;
-	}
+.header__logo {
+	margin: auto;
+	padding: 15px 0px;
+	display: block;
+}
 
-	.header__menu {
-		padding: 15px 0px;
-	}
+.header__menu {
+	padding: 15px 0px;
+}
 
 .header__button {
 	margin: 15px auto;
 	display: block;
 	background-color: #fff;
-	font-size: 18px;
-	color: #ce5aff;
 	width: 204px;
 	height: 44px;
 	border: 3px solid  #ce5aff;
@@ -100,8 +155,6 @@ footer {
 	display: none;
 	margin: 15px;
 	background-color: #fff;
-	font-size: 18px;
-	color: #ce5aff;
 	width: 204px;
 	height: 44px;
 	border: 3px solid  #ce5aff;
@@ -136,6 +189,11 @@ footer {
 	font-size: 18px;
 }
 
+
+
+								/***    ABOUT   ***/
+
+
 .about {
 	margin-top: 100px;
 }
@@ -151,17 +209,14 @@ footer {
 	margin-bottom: 40px;
 }
 
-.about__content {
-
-}
-
 .line {
 	margin-bottom: 0px;
 	border: 1px solid #ce5aff;
 	width: 100px;
 }
 
-.about__title {
+.about__title,
+.contact__title {
 	font-family: "Dancing Script OT", sans-serif;
 	font-size: 48px;
 }
@@ -171,26 +226,33 @@ footer {
 	font-size: 16px;
 }
 
-.about__button {
+.about__button,
+.button__submit {
 	margin: 15px auto;
 	display: block;
 	background-color: #fff;
 	font-size: 18px;
+	font-weight: 600;
 	color: #ce5aff;
 	width: 160px;
 	height: 44px;
 	border: 3px solid  #ce5aff;
 	border-radius: 22px;
 }
-/*
-.about__button:hover {
+
+.about__button a:hover {
 	background-color: #fce4fe;
 	box-shadow: 0 0 1px 1px #b37fad;
-}*/
+}
+
+.button__submit:hover {
+	background-color: #fce4fe;
+	box-shadow: 0 0 1px 1px #b37fad;
+}
 
 
 
-											/***			SECTION HISTORY      ***/
+											/***	  HISTORY      ***/
 
 
 .history__box {
@@ -316,6 +378,50 @@ footer {
 
 
 
+.map {
+	padding: 0;
+	margin-bottom: 70px;
+	box-shadow: 0 0 20px 0px #000;
+}
+
+
+
+											/***			CONTACT      ***/
+
+
+.contact__box {
+	margin-bottom: 80px;
+	background-color: #fff;
+	box-shadow: 0 0 20px 0px #000;
+}
+
+.contact__contacts {
+	margin-bottom: 20px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-size: 16px;
+	line-height: 20px;
+	font-family: Open-Sans, sans-serif;
+}
+
+.contact__item {
+	padding-right:20px;
+	min-width: 250px;
+	box-sizing: border-box;
+}
+
+.contact__socnet {
+	font-size: 30px;
+}
+
+.fa-twitter-square,
+.fa-facebook-square,
+.fa-dribbble,
+.fa-instagram {
+	padding: 10px 15px 0 0;
+}
 
 
 
@@ -328,15 +434,14 @@ footer {
 		background-color: #fff;
 	}
 
-	.footer__wrapper {
-
-	}
-
-	.footer__nav {
+	.footer__nav,
+	.footer__gall,
+	.footer__timing {
 		margin: 10px 0;
 	}
 
 	.footer__nav_title,
+	.footer__gall_title,
 	.footer__timing_title {
 		font-family: "Dancing Script OT", sans-serif;
 		font-size: 32px;
@@ -354,8 +459,9 @@ footer {
 		text-decoration: underline;
 	}
 
-	.footer__timing {
-		margin: 10px 0;
+	.footer__gall_item {
+		margin: 8px;
+		display: inline-block;
 	}
 
 	.footer__timing_day {
@@ -364,7 +470,10 @@ footer {
 		justify-content: space-between;
 	}
 
-
+	.footer__timing_line {
+		margin-top: 0px;
+		border: 1px solid #d4cae3;
+	}
 										
 
 
@@ -376,12 +485,9 @@ footer {
 
 
 
-
-
 .header__menu_item {
 	display: inline-block;
 }
-
 
 .header__button {
 	display: none;
@@ -390,7 +496,6 @@ footer {
 .header__button_768 {
 	display: block;
 }
-
 
 .about {
 	margin-top: 120px;
@@ -418,21 +523,13 @@ footer {
 	left: -37px;
 }
 
-
-
-
-
-
-
 }
 
 
 
+
+
 @media screen and (min-device-width: 992px) and (max-device-width: 1199px) {
-
-
-
-										/*  HEADER  */
 
 
 
@@ -441,7 +538,6 @@ footer {
 	height: 50px;
 	line-height: 50px;
 }
-
 
 .header__button {
 	display: block;
@@ -477,24 +573,20 @@ footer {
 	left: -37px;
 }
 
-
-
-
-
 }
+
 
 
 
 @media screen and (min-device-width: 1200px) {
 
+	
 
-														/*  HEADER  */
 .header__menu_item {
 	display: inline-block;
 	height: 50px;
 	line-height: 50px;
 }
-
 
 .header__button {
 	display: block;
@@ -529,9 +621,5 @@ footer {
 	top: -23px;
 	left: -37px;
 }
-
-
-
-
 
 }
